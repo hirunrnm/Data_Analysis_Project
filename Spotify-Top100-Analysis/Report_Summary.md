@@ -24,8 +24,7 @@ This project aims to analyze the **Top 100 most-streamed songs on Spotify** and 
 **Tool Used**
 1. Python - for web scraping, data cleaning, Exploratory Data Analysis (EDA), visualization, and export a file to .csv
 2. Excel - for transforming
-3. Tableau - for doing dashboard >> https://public.tableau.com/views/SpotifyTop100Analysis_17386515130440/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
-![Screen Shot 2025-02-04 at 4 23 21 PM](https://github.com/user-attachments/assets/e3ce65e7-6678-4b73-a5f9-aa94be7fcdd4)
+3. Tableau - for doing dashboard
 
 ## 2. Exploratory Data Analysis (EDA) <a name="exploratory-data-analysis-(EDA)"></a>
 

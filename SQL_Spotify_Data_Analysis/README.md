@@ -71,6 +71,7 @@ FROM spotify
 WHERE stream > 1000000000
 ;
 ```
+![Screen Shot 2025-02-04 at 10 00 38 PM](https://github.com/user-attachments/assets/6e1d4f29-5691-4e4b-b396-31415deaf7c2)
 
 2. List all albums along with their respective artists.
 ```sql

@@ -71,15 +71,17 @@ FROM spotify
 WHERE stream > 1000000000
 ;
 ```
-![Screen Shot 2025-02-04 at 10 00 38 PM](https://github.com/user-attachments/assets/6e1d4f29-5691-4e4b-b396-31415deaf7c2)
+![Screen Shot 2025-02-04 at 10 03 39 PM](https://github.com/user-attachments/assets/52400807-c623-4e58-8d48-23213bd2d9e9)
+
 
 2. List all albums along with their respective artists.
 ```sql
-SELECT artist,
-DISTINCT(album)	  
+SELECT DISTINCT(artist), album
 FROM spotify
 ;
 ```
+![Screen Shot 2025-02-04 at 10 07 37 PM](https://github.com/user-attachments/assets/4356db0d-b70e-4c1c-a233-3f64b15dfe57)
+
 
 3. Get the total number of comments for tracks where `licensed = TRUE`.
 ```sql
@@ -87,13 +89,17 @@ SELECT SUM(comments) AS total_comments
 FROM spotify
 WHERE licensed = 'true';
 ```
+![Screen Shot 2025-02-04 at 10 08 17 PM](https://github.com/user-attachments/assets/c2d460c5-1b1e-4309-81a5-254889a522e8)
+
 
 4. Find all tracks that belong to the album type `single`.
 ```sql
-SELECT track
+SELECT DISTINCT(track)
 FROM spotify
 WHERE album_type = 'single';
 ```
+![Screen Shot 2025-02-04 at 10 09 58 PM](https://github.com/user-attachments/assets/ee5f1a30-2f68-4125-a31f-ddbe1424a061)
+
 
 5. Count the total number of tracks by each artist.
 ```sql
@@ -104,6 +110,8 @@ GROUP BY artist
 ORDER BY total_track DESC
 ;
 ```
+![Screen Shot 2025-02-04 at 10 10 44 PM](https://github.com/user-attachments/assets/98d81923-5be8-43df-8a6f-6b3f23e29a51)
+
 
 ### Medium Level
 1. Calculate the average danceability of tracks in each album.
@@ -115,6 +123,8 @@ GROUP BY album
 ORDER BY avg_danceability DESC
 ;
 ```
+![Screen Shot 2025-02-04 at 10 11 22 PM](https://github.com/user-attachments/assets/75a6ce9b-af2a-4cdf-a85b-6a212e7f9fc3)
+
 
 2. Find the top 5 tracks with the highest energy values.
 ```sql
@@ -125,6 +135,8 @@ GROUP BY track
 ORDER BY highest_energy DESC
 LIMIT 5;
 ```
+![Screen Shot 2025-02-04 at 10 12 00 PM](https://github.com/user-attachments/assets/022b02cd-fd2a-4c8b-bd2c-a6aeca5f4575)
+
 
 3. List all tracks along with their views and likes where `official_video = TRUE`.
 ```sql
@@ -136,6 +148,8 @@ WHERE official_video = true
 GROUP BY track
 ORDER BY total_views DESC;
 ```
+![Screen Shot 2025-02-04 at 10 12 40 PM](https://github.com/user-attachments/assets/4b8e52bf-0ae7-41df-b2b5-3a0c5e89be83)
+
 
 4. For each album, calculate the total views of all associated tracks.
 ```sql
@@ -146,6 +160,8 @@ FROM spotify
 GROUP BY track, album
 ORDER BY total_views DESC;
 ```
+![Screen Shot 2025-02-04 at 10 13 12 PM](https://github.com/user-attachments/assets/37741924-edb4-4fcf-bbf8-68b34932d031)
+
 
 5. Retrieve the track names that have been streamed on Spotify more than YouTube.
 ```sql
@@ -170,6 +186,8 @@ JOIN stream_on_spotify AS sf
 WHERE spotify_stream > youtube_stream
 ORDER BY spotify_stream DESC;
 ```
+![Screen Shot 2025-02-04 at 10 13 50 PM](https://github.com/user-attachments/assets/ff079fca-f654-4972-8ad5-fc4c27ee846a)
+
 
 ### Advanced Level
 1. Find the top 3 most-viewed tracks for each artist using window functions.
@@ -188,6 +206,8 @@ FROM (
 ) AS most_view_rank
 WHERE rank <= 3;
 ```
+![Screen Shot 2025-02-04 at 10 14 22 PM](https://github.com/user-attachments/assets/8adb147e-42b3-4f6a-a28e-a2fe13aa49e3)
+
 
 2. Write a query to find tracks where the liveness score is above the average.
 ```sql
@@ -198,6 +218,8 @@ SELECT track,
 FROM spotify
 WHERE liveness > (SELECT AVG(liveness) FROM spotify);
 ```
+![Screen Shot 2025-02-04 at 10 15 26 PM](https://github.com/user-attachments/assets/1f83c37b-f955-483b-9489-5ce657d46ed3)
+
 
 3. **Use a `WITH` clause to calculate the difference between the highest and lowest energy values for tracks in each album.**
 ```sql
@@ -213,6 +235,8 @@ SELECT album,
 FROM energy_stats
 ORDER BY energy_diff DESC;
 ```
+![Screen Shot 2025-02-04 at 10 16 00 PM](https://github.com/user-attachments/assets/20fd73fe-67ef-4b02-aec4-152354240425)
+
 
 ## Technology Stack
 - **Database**: PostgreSQL

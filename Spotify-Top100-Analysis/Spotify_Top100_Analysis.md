@@ -13,7 +13,7 @@
 5. [Business Recommendations](#business-recommendations)
 6. [Conclusion](#conclusion)
 
-## 1. Project Overview
+## 1. Project Overview <a name="project-overview"></a>
 **Objective:**
 This project aims to analyze the **Top 100 most-streamed songs on Spotify** and uncover meaningful insights into streaming trends, artist performance, song popularity, and key factors influencing high stream counts.
 

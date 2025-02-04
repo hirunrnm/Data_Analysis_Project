@@ -3,7 +3,15 @@
 ## Spotify Top 100 Songs Analysis - Portfolio Report
 
 ## Table of Contents
-[Project Overview](#project-overview) 
+1. [Project Overview](#project-overview)
+2. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(EDA))
+   * 2.1 [Descriptive Statistics](#descriptive-statistics)
+   * 2.2 [Artist Performance](#artist-performance)
+   * 2.3 [Trends Over Time](#trends-over-time)
+   * 2.4 [Collaboration vs Solo Performance](#collaboration-vs-solo-performance)
+4. [Key Insights](#key-insights)
+5. [Business Recommendations](#business-recommendations)
+6. [Conclusion](#conclusion)
 
 ## 1. Project Overview
 **Objective:**

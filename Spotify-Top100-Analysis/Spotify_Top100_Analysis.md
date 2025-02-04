@@ -30,14 +30,8 @@ This project aims to analyze the **Top 100 most-streamed songs on Spotify** and 
 - **Top artists with the most songs in the list:**
   - **The Weeknd & Bruno Mars** (5 songs each)
   - **Coldplay, Ed Sheeran, Dua Lipa, Justin Bieber** (4 songs each)
-![Screen Shot 2025-02-04 at 4 19 48 PM](https://github.com/user-attachments/assets/10b57042-2072-40ce-9c5c-5501c76ae2f0)
-
-- Highest total streams (by artist):** Ed Sheeran 12.92 billion streams
-**![Screen Shot 2025-02-04 at 4 20 55 PM](https://github.com/user-attachments/assets/740549bb-675d-4efd-a337-1024e59a5f9e)
-
+- Highest total streams (by artist):** Ed Sheeran 12.92 billion streams**
 - **Artists with the highest average streams per song:** Lewis Capaldi (average 3.78 billion streams)
-![Screen Shot 2025-02-04 at 4 21 57 PM](https://github.com/user-attachments/assets/a0e81ef6-799a-4ad5-a272-caf2fc3e007f)
-
 
 ### **2.3 Trends Over Time**
 ![Screen Shot 2025-02-04 at 4 14 39 PM](https://github.com/user-attachments/assets/4cd0e4b3-65ca-45d4-ab81-050ef18f3035)

@@ -7,7 +7,14 @@
 This project aims to analyze the **Top 100 most-streamed songs on Spotify** and uncover meaningful insights into streaming trends, artist performance, song popularity, and key factors influencing high stream counts.
 
 **Dataset:**
-The dataset includes the top 100 songs based on total streams (in billions) along with their **artists, release dates, and streaming counts**.
+- The dataset was scraped from https://en.wikipedia.org/wiki/List_of_Spotify_streaming_records by using Python.
+- The dataset includes the top 100 songs based on total streams (in billions) along with their **artists, release dates, and total days since release**.
+
+**Tool Used**
+1. Python - for web scraping, data cleaning, Exploratory Data Analysis (EDA), visualization, and export a file to .csv
+2. Excel - for transforming
+3. Tableau - for doing dashboard >> https://public.tableau.com/views/SpotifyTop100Analysis_17386515130440/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+![Screen Shot 2025-02-04 at 4 23 21 PM](https://github.com/user-attachments/assets/e3ce65e7-6678-4b73-a5f9-aa94be7fcdd4)
 
 ## 2. Exploratory Data Analysis (EDA)
 
@@ -23,10 +30,17 @@ The dataset includes the top 100 songs based on total streams (in billions) alon
 - **Top artists with the most songs in the list:**
   - **The Weeknd & Bruno Mars** (5 songs each)
   - **Coldplay, Ed Sheeran, Dua Lipa, Justin Bieber** (4 songs each)
-- **Highest total streams (by artist):** The Weeknd 4.7 billion streams
+![Screen Shot 2025-02-04 at 4 19 48 PM](https://github.com/user-attachments/assets/10b57042-2072-40ce-9c5c-5501c76ae2f0)
+
+- Highest total streams (by artist):** Ed Sheeran 12.92 billion streams
+**![Screen Shot 2025-02-04 at 4 20 55 PM](https://github.com/user-attachments/assets/740549bb-675d-4efd-a337-1024e59a5f9e)
+
 - **Artists with the highest average streams per song:** Lewis Capaldi (average 3.78 billion streams)
+![Screen Shot 2025-02-04 at 4 21 57 PM](https://github.com/user-attachments/assets/a0e81ef6-799a-4ad5-a272-caf2fc3e007f)
+
 
 ### **2.3 Trends Over Time**
+![Screen Shot 2025-02-04 at 4 14 39 PM](https://github.com/user-attachments/assets/4cd0e4b3-65ca-45d4-ab81-050ef18f3035)
 - Songs released between **2015-2022 dominate** the list, indicating the strong influence of the streaming era.
 - The number of hit songs has **steadily increased** over time, reflecting the growth of Spotify and music streaming platforms.
 - Older songs (pre-2010) that remain in the top 100 are mostly **timeless classics** with consistent seasonal popularity (e.g., "All I Want for Christmas Is You").
@@ -36,7 +50,8 @@ The dataset includes the top 100 songs based on total streams (in billions) alon
 - **Duo collaborations** (e.g., The Weeknd & Daft Punk) perform better than large group collaborations.
 
 ## 3. Key Insights
-![Screen Shot 2025-02-04 at 3 54 15 PM](https://github.com/user-attachments/assets/26775ab2-adb2-4a49-92b3-6acc8e7377f5)
+![Screen Shot 2025-02-04 at 4 16 52 PM](https://github.com/user-attachments/assets/cc48b0a4-0868-436a-b6e2-f83f812b5057)
+
 🎵 **Streaming distribution is right-skewed:** A few songs achieve extreme success (4B+ streams), but most songs have ~2B-3B streams.
 🎤 **Artists with a strong fanbase & multiple hits dominate streaming charts** (e.g., The Weeknd, Ed Sheeran, Coldplay).
 📅 **Streaming trends favor songs released in the last decade**, reinforcing how new music discovery has changed in the streaming era.

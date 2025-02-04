@@ -1,6 +1,6 @@
 ![Spotify_Primary_Logo_RGB_Green-removebg-preview](https://github.com/user-attachments/assets/309ab0d4-3ede-465b-9649-2160e53466f9)
 
-**Spotify Top 100 Songs Analysis - Portfolio Report**
+##**Spotify Top 100 Songs Analysis - Portfolio Report**
 
 ## 1. Project Overview
 **Objective:**

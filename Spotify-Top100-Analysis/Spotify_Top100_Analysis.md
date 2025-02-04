@@ -58,9 +58,13 @@ This project aims to analyze the **Top 100 most-streamed songs on Spotify** and 
 ![Screen Shot 2025-02-04 at 4 16 52 PM](https://github.com/user-attachments/assets/cc48b0a4-0868-436a-b6e2-f83f812b5057)
 
 🎵 **Streaming distribution is right-skewed:** A few songs achieve extreme success (4B+ streams), but most songs have ~2B-3B streams.
+
 🎤 **Artists with a strong fanbase & multiple hits dominate streaming charts** (e.g., The Weeknd, Ed Sheeran, Coldplay).
+
 📅 **Streaming trends favor songs released in the last decade**, reinforcing how new music discovery has changed in the streaming era.
+
 🤝 **Collaborations are effective in increasing streams**, but not all collaborations guarantee success.
+
 ⏳ **Older songs that remain in the top charts tend to be iconic global hits or seasonal favorites.**
 
 ## 4. Business Recommendations <a name="business-recommendations"></a>

@@ -80,7 +80,7 @@ SET country = CASE
 - **Total Records & Distinct Values**:
   - Counted total records in `applesales`.
 
-![Screen Shot 2025-02-09 at 4 45 10 PM](https://github.com/user-attachments/assets/3a572935-9ec5-4cb9-bee7-daf4afc699b0)
+  ![Screen Shot 2025-02-09 at 4 45 10 PM](https://github.com/user-attachments/assets/3a572935-9ec5-4cb9-bee7-daf4afc699b0)
   
   - Listed distinct values for `country` and `continent`.
 - **iPhone Sales Statistics**:

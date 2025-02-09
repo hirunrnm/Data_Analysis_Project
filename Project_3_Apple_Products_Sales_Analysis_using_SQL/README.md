@@ -206,7 +206,7 @@ LIMIT 10;
 ```
 ![Screen Shot 2025-02-09 at 5 08 56 PM](https://github.com/user-attachments/assets/a0338ca9-87e9-409c-b5b1-533f998a5d47)
 
-9. **Product Correlation Analysis**: Used the `CORR()` function to analyze the relationship between iPhone sales and other products (iPads, Macs, Wearables).
+9. **Product Correlation Analysis**: Used the `CORR()` function to analyze the relationship between iPhone sales and other products (Wearables, iPads, Macs).
 ```sql
 SELECT ROUND(CORR(iphone_sales, wearables)::NUMERIC,2) AS corr_iphone_wearables,
 	   ROUND(CORR(iphone_sales, ipad_sales)::NUMERIC,2) AS corr_iphone_ipad,

@@ -1,1 +1,15 @@
+# Apple Sales Data Analysis
 ![R733](https://github.com/user-attachments/assets/4c06892e-6a31-450d-9f72-5750b648d9db)
+## Table of Contents
+1. [Overview](#overview)
+2. [Table Structure](#table-structure)
+3. [Data Cleaning](#data-cleaning)
+4. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+   - [General Insights](#general-insights)
+   - [Sales Aggregations](#sales-aggregations)
+   - [Ranking & Correlation Analysis](#ranking--correlation-analysis)
+   - [Country-Specific Analysis](#country-specific-analysis)
+5. [Key SQL Techniques Used](#key-sql-techniques-used)
+6. [Insight Analysis](#insight-analysis)
+7. [Summary](#summary)
+8. [Next Steps](#next-steps)

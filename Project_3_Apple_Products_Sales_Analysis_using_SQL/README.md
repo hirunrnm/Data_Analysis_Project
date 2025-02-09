@@ -28,6 +28,19 @@ The `applesales` table consists of the following columns:
 
 ## Data Cleaning
 - **Duplicate Check**: Identified duplicate rows based on all columns except for unique row identifiers.
+```sql
+WITH row_num_cte AS 
+(
+SELECT *,
+ROW_NUMBER() OVER(
+	PARTITION BY country, continent, iphone_sales, ipad_sales, mac_sales, wearables, services_revenue) AS row_num
+FROM applesales
+)
+SELECT *
+FROM row_num_cte
+WHERE row_num > 1
+;
+```
 - **Null Check**: Checked for missing values in all columns.
 - **Renamed Columns**: Changed `location` to `country` for clarity.
 - **Standardized Country Names**: Replaced city names (e.g., Beijing, Shanghai) with their corresponding country names (e.g., China, United States, United Kingdom).

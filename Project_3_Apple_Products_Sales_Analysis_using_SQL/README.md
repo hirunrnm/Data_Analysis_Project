@@ -42,13 +42,44 @@ WHERE row_num > 1
 ;
 ```
 - **Null Check**: Checked for missing values in all columns.
+```sql
+SELECT *
+FROM applesales
+WHERE country IS NULL
+   OR continent IS NULL
+   OR iphone_sales IS NULL
+   OR ipad_sales IS NULL
+   OR mac_sales IS NULL
+   OR wearables IS NULL
+   OR services_revenue IS NULL;
+```
 - **Renamed Columns**: Changed `location` to `country` for clarity.
+```sql
+ALTER TABLE applesales RENAME COLUMN location TO country;
+```
 - **Standardized Country Names**: Replaced city names (e.g., Beijing, Shanghai) with their corresponding country names (e.g., China, United States, United Kingdom).
+```sql
+UPDATE applesales
+SET country = CASE 
+                     WHEN country = 'Chongqing' THEN 'China'
+                     WHEN country = 'Shanghai' THEN 'China'
+					 WHEN country = 'Beijing' THEN 'China'
+					 WHEN country = 'Shenzhen' THEN 'China'
+					 WHEN country = 'UK' THEN 'United Kingdom'
+                     WHEN country = 'New York' THEN 'United States'
+                     WHEN country = 'Texas' THEN 'United States'
+					 WHEN country = 'California' THEN 'United States'
+					 WHEN country = 'Florida' THEN 'United States'
+					 WHEN country = 'Illinois' THEN 'United States'
+                     ELSE country
+                 END;
+```
 
 ## Exploratory Data Analysis (EDA)
 ### General Insights
 - **Total Records & Distinct Values**:
   - Counted total records in `applesales`.
+  ![Screen Shot 2025-02-09 at 4 45 10 PM](https://github.com/user-attachments/assets/3a572935-9ec5-4cb9-bee7-daf4afc699b0)
   - Listed distinct values for `country` and `continent`.
 - **iPhone Sales Statistics**:
   - Calculated max, min, and average sales for iPhones.

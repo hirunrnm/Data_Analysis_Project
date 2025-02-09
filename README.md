@@ -1,1 +1,1 @@
-The collection of my data analysis.
+The collection of my data analysis projects.

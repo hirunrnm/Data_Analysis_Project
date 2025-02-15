@@ -178,6 +178,8 @@ LIMIT 10;
 ```
 ![Screen Shot 2025-02-09 at 5 05 20 PM](https://github.com/user-attachments/assets/a62f083b-c7e5-4cba-9d49-333a21ee262d)
 
+![Screen Shot 2025-02-15 at 4 01 20 PM](https://github.com/user-attachments/assets/786ab2dc-6e33-4252-a297-8ae277cfe86d)
+
 7. **Top 10 iPad Sales by Country**: Ranked the top 10 countries based on iPad sales.
 ```sql
 SELECT DENSE_RANK() OVER (ORDER BY total_ipad_sales DESC) AS rank, 

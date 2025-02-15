@@ -194,6 +194,8 @@ LIMIT 10;
 ```
 ![Screen Shot 2025-02-09 at 5 06 53 PM](https://github.com/user-attachments/assets/8c56d154-c950-4642-8d67-f62b644517c8)
 
+![Screen Shot 2025-02-15 at 4 14 33 PM](https://github.com/user-attachments/assets/50bcf30f-a9b6-45e9-a4a2-5852c24269c7)
+
 8. **Top 10 Services Revenue by Country**: Ranked the top 10 countries based on services revenue.
 ```sql
 SELECT DENSE_RANK() OVER (ORDER BY total_services_revenue DESC) AS rank,
